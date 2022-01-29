@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <form>
     <nav class="header">
       <div class="header-container">
         <img src="./logo.png" alt="Cipher" width="auto" height="100%"/>
@@ -29,30 +30,30 @@
       <div class="titulo">
         O QUE VOCÊ GOSTARIA DE FAZER?
       </div>
-      <div class="texto">
-          <input type="radio" name="cifra"/>
-          CIFRAR
-          <input type="radio" name="decifra"/>
-          DECIFRAR
+      <div class="escolher">
+        <select name="option" id="escolha">
+          <option value="cifra">CIFRAR</option>
+          <option value="decifra">DECIFRAR</option>
+        </select>
       </div>
       <div class="titulo">
           ESCOLHA SEU DESLOCAMENTO:
       </div>
         <div>
-            <input class="number" type="number" name="offset"/>
+            <input class="number" type="number" name="offset" id="offset" min="0"/>
         </div>
       <div class="titulo">
         DIGITE SEU TEXTO NO CAMPO ABAIXO:
         <div>
-          <textarea class="result"></textarea>
+          <textarea name="plaintext" class="result" id="meuTexto"></textarea>
         </div>
       </div>
       <div class="converte">
-        <input class="button" type="submit" value="CONVERTER"/>
+        <input id="clickMe" class="button" type="submit" value="CONVERTER"/>
         <div class="titulo">
           SEU RESULTADO:
         </div>
-        <textarea class="result"></textarea>
+        <textarea name="conversao" class="result" id="resultadoTexto"></textarea>
       </div>
       <div>
         <input class="mail" type="email" name="e-mail" id="mail"/>
@@ -103,5 +104,6 @@
       </p>
     </footer>
     <script src="index.js" type="module"></script>
+  </form>
   </body>
 </html>
