@@ -8,9 +8,25 @@ const alfabeto = [
 
 const cipher = {
   encode: function(offset, text) {
+    if (!offset || offset < 1){
+      throw new TypeError("Você deve inserir um valor válido de deslocamento.");
+    }
+
+    if (!text || text.trim() === ""){
+      throw new TypeError("Você deve inserir um texto válido.");
+    }
+
     return [...text].map(char => cipher.encodeChar(offset, char)).join('')
   },
   decode: function(offset, text) {
+    if (!offset || offset < 1){
+      throw new TypeError("Você deve inserir um valor válido de deslocamento.");
+    }
+
+    if (!text || text.trim() === ""){
+      throw new TypeError("Você deve inserir um texto válido.");
+    }
+
     return [...text].map(char => cipher.decodeChar(offset, char)).join('')
   },
   encodeChar: function(inputOffset, char) {
