@@ -1,5 +1,9 @@
 # **PRIMEIRO PROJETO - LABORATORIA**
 
+<p align="center">
+<img src="https://rockcontent.com/br/wp-content/uploads/sites/2/2020/04/Javascript.png" alt="drawing" width="200"/>
+</p>
+
 ## **ÍNDICE:**
 1. [PROJETO ESCOLHIDO](#1-projeto-escolhido)
 2. [RESUMO DO PROJETO](#2-resumo-do-projeto)
