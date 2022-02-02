@@ -1,11 +1,11 @@
 # **PRIMEIRO PROJETO - LABORATORIA**
 
 ## **ÍNDICE:**
-[1. PROJETO ESCOLHIDO](#1-projeto-escolhido)
-[2. RESUMO DO PROJETO](#2-resumo-do-projeto)
-[3. PÚBLICO ALVO](#3-público-alvo)
-[4. OBJETIVO DO SITE](#4-objetivo-do-site)
-[5. METAS ALCAÇADAS](#5-metas-alcançadas)
+1. [PROJETO ESCOLHIDO](#1-projeto-escolhido)
+2. [RESUMO DO PROJETO](#2-resumo-do-projeto)
+3. [PÚBLICO ALVO](#3-público-alvo)
+4. [OBJETIVO DO SITE](#4-objetivo-do-site)
+5. [METAS ALCAÇADAS](#5-metas-alcançadas)
 
 # [PROJETO ESCOLHIDO](#1-projeto-escolhido)
 
