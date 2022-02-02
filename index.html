@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cipher - Amanda Gusmão</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+    <nav class="header">
+      <div class="header-container">
+        <img src="./logo.png" alt="Cipher" width="auto" height="100%"/>
+        <ul class="menu">
+          <li><a href="#inicio">INÍCIO</a></li>
+          <li><a href="#usar">COMO USAR?</a></li>
+          <li>
+            <a href="https://github.com/amandagusmao" target="_blank">
+              <img src="./silhueta-do-logotipo-do-github-em-um-quadrado.png" alt="amandagusmao" width="auto" height="25"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gusmaoamanda/" target="_blank">
+              <img src="./linkedin.png" alt="gusmaoamanda" width="auto" height="25"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="inicio" class="inicio">
+      <div class="titulo">
+        O QUE VOCÊ GOSTARIA DE FAZER?
+      </div>
+      <div class="escolher">
+        <select name="option" id="escolha">
+          <option value="cifra">CIFRAR</option>
+          <option value="decifra">DECIFRAR</option>
+        </select>
+      </div>
+      <div class="titulo">
+          ESCOLHA SEU DESLOCAMENTO:
+      </div>
+        <div>
+            <input class="number" type="number" name="offset" id="offset" min="0"/>
+        </div>
+      <div class="titulo">
+        DIGITE SEU TEXTO NO CAMPO ABAIXO:
+        <div>
+          <textarea name="plainText" class="result" id="meuTexto"></textarea>
+        </div>
+      </div>
+      <div class="converte">
+        <input id="clickMe" class="button" type="submit" value="CONVERTER"/>
+        <div class="titulo">
+          SEU RESULTADO:
+        </div>
+        <textarea name="conversao" class="result" id="resultadoTexto"></textarea>
+      </div>
+      <div>
+        <input class="mail" type="tel" name="tel" placeholder="Tel com código de país e área" id="tel"/>
+        <input id="whats" class="button" type="submit" value="ENVIAR POR WHATSAPP"/>
+        <input type="reset" class="button" value="LIMPAR"/>
+      </div>
+    </div>
+    <div id="usar" class="fake"></div>
+    <div class="usar">
+        <div class="titulo">
+          COMO USAR A CIFRA DE CÉSAR?
+        </div>
+        <div class="texto-usar">
+          <p>
+            Cifrar significa codificar. A cifra de César é um dos primeiros tipos de criptografias conhecidas na história. O imperador romano Júlio César utilizava essa cifra para enviar ordens secretas aos seus generais no campo de batalha.
+          </p>
+          <p>
+            A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É um tipo de cifra por substituição, em que cada letra do texto original é substituida por outra que se encontra há um número fixo de posições (deslocamento) mais a frente do mesmo alfabeto.
+          </p>
+          <div class="image-text">
+              <img src="./ceasar.png" alt="ceasar" width="auto" height="100%"/>
+          </div>
+          <p>
+            Por exemplo se usarmos o deslocamento (offset) de 3 posições:
+          </p>
+          <li>
+            Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+          </li>
+          <li>
+            Alfabeto com cifra: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+          </li>
+          <li>
+            A letra A será D
+          </li>
+          <li>
+            A palavra CASA será FDVD
+          </li>
+          <p>
+            Atualmente todas as cifras de substituição alfabética simples, são decifradas com facilidade e não oferecem muita segurança na comunicação por si mesma, mas a cifra de César muitas vezes pode fazer parte de um sistema mais complexo de criptografia, como a cifra de Vigenère, e tem aplicação no sistema ROT13.
+          </p>
+        </div>
+    </div>
+    <footer class="footer">
+      <p class="footer-text">
+        Projeto desenvolvido por Amanda Gusmão
+      </p>
+      <p class="footer-text">
+        Laboratoria - 2022
+      </p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </form>
+  </body>
+</html>
